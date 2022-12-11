@@ -1,4 +1,0 @@
-TIME 2: read cmd line: worker msleep 1; increment 2;
-TIME 2: read cmd line: worker msleep 3; repeat 5; increment 4;
-TIME 2: read cmd line: dispatcher_msleep 1000
-TIME 3: read cmd line: worker msleep 3000; repeat 11; decrement 4;

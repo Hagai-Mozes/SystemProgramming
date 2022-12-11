@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include <string.h>
 #include <unistd.h>
-#include <time.h>
+#include <sys/time.h>
 
 #include "queue.h"
 
@@ -28,32 +28,33 @@ struct thread_data_s{
     int id;
 };
 
+//Global variables
+long long int start_time;
 int log_enabled=0;
 int finish_flag;
+int num_running_threads=0;
+
 FILE* counters[MAX_NUM_COUNTERS];
 struct thread_data_s thread_data[MAX_NUM_THREADS];
 
-long long get_process_time() {
-  struct timespec t ;
-  clock_gettime ( CLOCK_PROCESS_CPUTIME_ID, & t ) ;
-  return t.tv_sec * 1000 + t.tv_nsec / 1e6;
-}
-
 void write_log_line(FILE* log_file, char *line, Log_mode mode){
     if(log_enabled){
-        long long time = get_process_time();
+        long long int end_time;
+        struct timeval tv;
+        gettimeofday(&tv, NULL);
+        end_time = tv.tv_sec*1000 + tv.tv_usec/1000;
         if(line[strlen(line)-1] != '\n'){
             line[strlen(line)] = '\n';
             line[strlen(line)+1] = '\0';
         }
         if (mode==LOG_START){
-            fprintf(log_file, "TIME %lld: START job %s", time, line);
+            fprintf(log_file, "TIME %lld: START job %s", end_time - start_time, line);
         }
         else if(mode==LOG_END){
-            fprintf(log_file, "TIME %lld: END job %s", time, line);
+            fprintf(log_file, "TIME %lld: END job %s", end_time - start_time, line);
         }
         else{
-            fprintf(log_file, "TIME %lld: read cmd line: %s", time, line);
+            fprintf(log_file, "TIME %lld: read cmd line: %s", end_time - start_time, line);
         }
     }
 }
@@ -64,7 +65,7 @@ Counter_args_s *parse_worker_line(char* line){
     char *worker_cmd_str;
     head_counter_args=NULL;
     counter_args=NULL;
-    while((worker_cmd_str = strtok(NULL, " \n")) != NULL){
+    while((worker_cmd_str = strtok(NULL, " ;\n")) != NULL){
         if(counter_args==NULL){
             counter_args = (Counter_args_s*) malloc(sizeof(Counter_args_s));
             head_counter_args=counter_args;
@@ -72,7 +73,7 @@ Counter_args_s *parse_worker_line(char* line){
         else{
             if(!strcmp(worker_cmd_str,"repeat")){
                 head_copy_counter_args=counter_args;
-                repeat=atoi(strtok(NULL, ";"));
+                repeat=atoi(strtok(NULL, ";\n"));
                 continue;
             }
             else {
@@ -87,9 +88,10 @@ Counter_args_s *parse_worker_line(char* line){
             counter_args->counter_action = 1;
         }
         else if(!strcmp(worker_cmd_str,"decrement")){
+            printf("finish dispetcher_wait - now decrement\n");
             counter_args->counter_action = -1;
         }
-        counter_args->cmd_num = atoi(strtok(NULL, ";")); //FIXME - does every command ends with ;?
+        counter_args->cmd_num = atoi(strtok(NULL, " ;\n")); //FIXME - does every command ends with ;?
         counter_args->next=NULL;
     }
     repeat_commands(head_copy_counter_args->next, counter_args, repeat);
@@ -98,6 +100,7 @@ Counter_args_s *parse_worker_line(char* line){
 }
 
 void *worker_thread(void* arg){
+    num_running_threads+=1;
     struct thread_data_s *thread_data = (struct thread_data_s *) arg;
     Counter_args_s *curr_counter_args=NULL, *prev_counter_args=NULL;
     Jobs *curr_job=NULL;
@@ -114,23 +117,26 @@ void *worker_thread(void* arg){
     printf("hi from %d\n", thread_data->id);
     while(1){
         pthread_mutex_lock(&threads_mutex);
+        pthread_mutex_lock(&queue_lock);
         while (get_queue_head()==NULL && finish_flag == 0){
+            num_running_threads-=1;
             pthread_cond_signal(&cond_dispatcher_wait);
             pthread_cond_wait(&cond_threads, &threads_mutex);
+            num_running_threads+=1;
         }
         pthread_mutex_unlock(&threads_mutex);
         if (get_queue_head()==NULL && (finish_flag == 1)){
             printf("bye from %d\n", thread_data->id);
+            pthread_mutex_unlock(&queue_lock);
             break;
         }
-        pthread_mutex_lock(&queue_lock);
         curr_job=dequeue();
         curr_counter_args=curr_job->counter_args_head;
         pthread_mutex_unlock(&queue_lock);
         write_log_line(log_file, curr_job->line, LOG_START);
         while (curr_counter_args!=NULL){
             if(curr_counter_args->counter_action == ACTION_MSLEEP){
-                sleep((curr_counter_args->cmd_num)/1000);
+                usleep((curr_counter_args->cmd_num)*1000);
             }
             else{
                 pthread_mutex_lock(&counters_mutex[curr_counter_args->cmd_num]);
@@ -150,9 +156,13 @@ void *worker_thread(void* arg){
         free(curr_job);
     }
     fclose(log_file);
+    num_running_threads-=1;
 }
 
 int main (int argc, char **argv) {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    start_time= tv.tv_sec*1000 + tv.tv_usec/1000;
     FILE* cmdfile, *dispatcher_log;
     char *line, *line_returned_buffer;
     char line_buffer[MAX_LINE_SIZE];
@@ -172,7 +182,7 @@ int main (int argc, char **argv) {
     Counter_args_s *head_counter_args;
     int repeat=1;
     char* mode_str, *worker_cmd_str;
-    int sleep_time;
+    unsigned int sleep_time;
     if(log_enabled){
         dispatcher_log=fopen("dispatcher.txt", "w");
     }
@@ -191,21 +201,25 @@ int main (int argc, char **argv) {
     for (i=0; i<num_counters; i++){
         pthread_mutex_init(&counters_mutex[i], NULL);
     }
-    // read file and exec
+    
+    ////////////////////////////////
+    // start read file and exec   //
+    ////////////////////////////////
+
     line_returned_buffer="enter to the loop";
     line=(char*) malloc(MAX_LINE_SIZE * sizeof(char));
     while((line_returned_buffer=fgets(line, MAX_LINE_SIZE, cmdfile)) != NULL){
         write_log_line(dispatcher_log, line, LOG_READ);
         strcpy(line_buffer, line);
-        mode_str = strtok(line_buffer, " ");
+        mode_str = strtok(line_buffer, " ;\n");
         if (!strcmp(mode_str, "dispatcher_msleep")){
-            sleep_time = atoi(strtok(NULL, " "));
-            sleep(sleep_time/1000);
+            sleep_time = atoi(strtok(NULL, " ;\n"));
+            usleep(sleep_time*1000);
             free(line);
         }
         else if (!strcmp(mode_str, "dispatcher_wait")){
             pthread_mutex_lock(&threads_mutex);
-            while (get_queue_head!=NULL){
+            while ((num_running_threads!=0) || (get_queue_head()!=NULL)){
                 pthread_cond_wait(&cond_dispatcher_wait, &threads_mutex);
             }
             pthread_mutex_unlock(&threads_mutex);
@@ -227,6 +241,7 @@ int main (int argc, char **argv) {
     pthread_cond_broadcast(&cond_threads);
     for(i=0; i<num_threads; i++){
         pthread_join(threads[i], NULL);
+        printf("pthread_join\n");
     }
     pthread_cond_destroy(&cond_threads);
     pthread_cond_destroy(&cond_dispatcher_wait);
