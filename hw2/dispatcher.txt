@@ -1,6 +1,3 @@
-TIME 5: read cmd line: worker msleep 11; increment 1;
-TIME 5: read cmd line: worker msleep 22; repeat 2; increment 2;
-TIME 5: read cmd line: worker repeat 3; increment 3; msleep 1000;
-TIME 5: read cmd line: dispatcher_wait;
-TIME 3009: read cmd line: worker increment 4; increment 4; increment 4; increment 4;
-TIME 3009: read cmd line: worker msleep 55; increment 5; increment 5; increment 5; increment 5; increment 5;
+TIME 5: read cmd line: worker msleep 1000;
+TIME 5: read cmd line: worker msleep 4000;
+TIME 5: read cmd line: worker msleep 10000;

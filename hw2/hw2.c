@@ -4,6 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/time.h>
+#include <limits.h>
 
 #include "queue.h"
 
@@ -33,6 +34,9 @@ long long int start_time;
 int log_enabled=0;
 int finish_flag;
 int num_running_threads=0;
+long long int sum_jobs_time=0;
+long long int min_jobs_time=LLONG_MAX;
+long long int max_jobs_time=0;
 
 typedef struct file_s{
     FILE* fp;
@@ -61,6 +65,20 @@ void write_log_line(FILE* log_file, char *line, Log_mode mode){
         else{
             fprintf(log_file, "TIME %lld: read cmd line: %s", end_time - start_time, line);
         }
+    }
+}
+
+long long int update_calc(){
+    long long int end_time;
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    end_time = tv.tv_sec*1000 + tv.tv_usec/1000;
+    sum_jobs_time += (end_time - start_time);
+    if(end_time - start_time < min_jobs_time){
+        min_jobs_time = end_time - start_time;
+    }
+    if(max_jobs_time < end_time - start_time){
+        max_jobs_time = end_time - start_time;
     }
 }
 
@@ -163,6 +181,7 @@ void *worker_thread(void* arg){
             
         }
         write_log_line(log_file, curr_job->line, LOG_END);
+        update_calc();
         free(curr_job->line);
         free(curr_job);
     }
@@ -176,10 +195,11 @@ int main (int argc, char **argv) {
     struct timeval tv;
     gettimeofday(&tv, NULL);
     start_time= tv.tv_sec*1000 + tv.tv_usec/1000;
-    FILE* cmdfile, *dispatcher_log;
+    FILE* cmdfile, *dispatcher_log, *stats;
     char *line, *line_returned_buffer;
     char line_buffer[MAX_LINE_SIZE];
-    int num_threads, num_counters, i;
+    int num_threads, num_counters, i, worker_jobs_num=0;
+    long long int end_time;
     char counter_filename[30];
     if (argc != 5){
         printf("Bad number of arguments, exit.\n");
@@ -196,6 +216,8 @@ int main (int argc, char **argv) {
     int repeat=1;
     char* mode_str, *worker_cmd_str;
     unsigned int sleep_time;
+
+    //create dispatcher log file if needed
     if(log_enabled){
         dispatcher_log=fopen("dispatcher.txt", "w");
     }
@@ -236,6 +258,7 @@ int main (int argc, char **argv) {
             free(line);
         }
         else if (!strcmp(mode_str, "worker")){
+            worker_jobs_num++;
             head_counter_args=parse_worker_line(line_buffer);
             pthread_mutex_lock(&queue_lock);
             enqueue(head_counter_args, line);
@@ -265,4 +288,19 @@ int main (int argc, char **argv) {
     if (dispatcher_log!=NULL){
         fclose(dispatcher_log);
     }
+
+    //create stats file 
+    gettimeofday(&tv, NULL);
+    end_time = tv.tv_sec*1000 + tv.tv_usec/1000;
+
+    stats = fopen("stats.txt", "w");
+    
+    fprintf(stats,"total running time: %lld milliseconds\n", end_time - start_time);
+    fprintf(stats,"sum of jobs turnaround time: %lld milliseconds\n", sum_jobs_time);
+    fprintf(stats,"min job turnaround time: %lld milliseconds\n", min_jobs_time);
+    fprintf(stats,"average job turnaround time: %lld milliseconds\n", sum_jobs_time/worker_jobs_num);
+    fprintf(stats,"max job turnaround time: %lld milliseconds\n", max_jobs_time);
+
+
+    fclose(stats);
 }
