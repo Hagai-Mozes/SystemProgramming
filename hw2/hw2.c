@@ -28,6 +28,11 @@ struct thread_data_s{
     int id;
 };
 
+typedef struct file_s{
+    FILE* fp;
+    char *name;
+} File_s;
+
 //Global variables
 long long int start_time;
 int log_enabled=0;
@@ -49,37 +54,42 @@ void write_log_line(FILE* log_file, char *line, Log_mode mode){
         }
         if (mode==LOG_START){
             fprintf(log_file, "TIME %lld: START job %s", end_time - start_time, line);
+            printf("TIME %lld: START job %s", end_time - start_time, line);
         }
         else if(mode==LOG_END){
             fprintf(log_file, "TIME %lld: END job %s", end_time - start_time, line);
+            printf("TIME %lld: END job %s", end_time - start_time, line);
         }
         else{
             fprintf(log_file, "TIME %lld: read cmd line: %s", end_time - start_time, line);
+            printf("TIME %lld: read cmd line: %s", end_time - start_time, line);
         }
     }
 }
 
 Counter_args_s *parse_worker_line(char* line){
-    int i=0, repeat=0;
+    int i=0, repeat=0, repeat_flag=0;
     Counter_args_s *counter_args ,*head_counter_args, *head_copy_counter_args;
     char *worker_cmd_str;
     head_counter_args=NULL;
     counter_args=NULL;
     while((worker_cmd_str = strtok(NULL, " ;\n")) != NULL){
+        if(!strcmp(worker_cmd_str,"repeat")){
+            repeat=atoi(strtok(NULL, " ;\n"));
+            repeat_flag=1;
+            continue;
+        }
         if(counter_args==NULL){
             counter_args = (Counter_args_s*) malloc(sizeof(Counter_args_s));
             head_counter_args=counter_args;
         }
         else{
-            if(!strcmp(worker_cmd_str,"repeat")){
-                head_copy_counter_args=counter_args;
-                repeat=atoi(strtok(NULL, ";\n"));
-                continue;
-            }
-            else {
-                counter_args->next = (Counter_args_s*) malloc(sizeof(Counter_args_s));
-                counter_args=counter_args->next;
-            }
+            counter_args->next = (Counter_args_s*) malloc(sizeof(Counter_args_s));
+            counter_args=counter_args->next;
+        }
+        if(repeat_flag){
+            repeat_flag=0;
+            head_copy_counter_args=counter_args;
         }
         if(!strcmp(worker_cmd_str,"msleep")){
             counter_args->counter_action = ACTION_MSLEEP;
@@ -94,8 +104,9 @@ Counter_args_s *parse_worker_line(char* line){
         counter_args->cmd_num = atoi(strtok(NULL, " ;\n")); //FIXME - does every command ends with ;?
         counter_args->next=NULL;
     }
-    repeat_commands(head_copy_counter_args->next, counter_args, repeat);
+    repeat_commands(head_copy_counter_args, counter_args, repeat);
     pthread_cond_signal(&cond_threads);
+    // print_counter_args(head_counter_args);
     return head_counter_args;
 }
 
@@ -121,6 +132,7 @@ void *worker_thread(void* arg){
         while (get_queue_head()==NULL && finish_flag == 0){
             num_running_threads-=1;
             pthread_cond_signal(&cond_dispatcher_wait);
+            pthread_mutex_unlock(&queue_lock);
             pthread_cond_wait(&cond_threads, &threads_mutex);
             num_running_threads+=1;
         }
@@ -132,6 +144,7 @@ void *worker_thread(void* arg){
         }
         curr_job=dequeue();
         curr_counter_args=curr_job->counter_args_head;
+        print_counter_args(curr_counter_args);
         pthread_mutex_unlock(&queue_lock);
         write_log_line(log_file, curr_job->line, LOG_START);
         while (curr_counter_args!=NULL){
@@ -140,11 +153,19 @@ void *worker_thread(void* arg){
             }
             else{
                 pthread_mutex_lock(&counters_mutex[curr_counter_args->cmd_num]);
+                printf("curr_counter_args->cmd_num: %d in thead %d\n",curr_counter_args->cmd_num, id);
+                counter_val=0;
+                fseek(counters[curr_counter_args->cmd_num], 0, SEEK_SET);
                 fscanf(counters[curr_counter_args->cmd_num], "%lld", &counter_val);
                 counter_val+=curr_counter_args->counter_action;
                 sprintf(value_str, "%lld", counter_val);
-                counters[curr_counter_args->cmd_num]=freopen(NULL,"w",counters[curr_counter_args->cmd_num]);
-                fwrite(value_str, 1, strlen(value_str), counters[curr_counter_args->cmd_num]);
+                printf("^^^^^^^^^^^%s^^^^^^^^^^^^^^^", value_str);
+                // fopen(NULL, "w", counters[curr_counter_args->cmd_num])           
+                /* counters[curr_counter_args->cmd_num]=freopen(NULL,"w",counters[curr_counter_args->cmd_num]); */
+                fseek(counters[curr_counter_args->cmd_num], 0, SEEK_SET);
+                fprintf(counters[curr_counter_args->cmd_num], "%lld", counter_val);
+                fclose(counters[curr_counter_args->cmd_num]);
+                // fwrite(value_str, 1, strlen(value_str), counters[curr_counter_args->cmd_num]);
                 pthread_mutex_unlock(&counters_mutex[curr_counter_args->cmd_num]);
             }
             prev_counter_args=curr_counter_args;
@@ -201,11 +222,7 @@ int main (int argc, char **argv) {
     for (i=0; i<num_counters; i++){
         pthread_mutex_init(&counters_mutex[i], NULL);
     }
-    
-    ////////////////////////////////
-    // start read file and exec   //
-    ////////////////////////////////
-
+    // read file and exec
     line_returned_buffer="enter to the loop";
     line=(char*) malloc(MAX_LINE_SIZE * sizeof(char));
     while((line_returned_buffer=fgets(line, MAX_LINE_SIZE, cmdfile)) != NULL){

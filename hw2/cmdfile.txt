@@ -1,4 +1,5 @@
-worker msleep 1; increment 2;
-worker msleep 3; repeat 3; increment 4; msleep 1000;
-dispatcher_wait ;
-worker repeat 11; decrement 4;
+worker msleep 11; increment 1;
+worker msleep 22; repeat 2; increment 2;
+worker repeat 3; increment 3;
+worker increment 4; increment 4; increment 4; increment 4;
+worker msleep 55; increment 5; increment 5; increment 5; increment 5; increment 5;

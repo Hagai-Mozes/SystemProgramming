@@ -17,6 +17,7 @@ typedef struct jobs{
 } Jobs;
 
 void repeat_commands(Counter_args_s *head_copy_counter_args, Counter_args_s *tail_copy_counter, int repeat);
+void print_counter_args(Counter_args_s* head);
 Jobs* dequeue();
 Jobs* enqueue(Counter_args_s* job, char* line);
 void free_linked_list(Counter_args_s* head);
