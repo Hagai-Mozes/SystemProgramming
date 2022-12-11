@@ -69,9 +69,8 @@ void print_counter_args(Counter_args_s* head){
     Counter_args_s* counter_args;
     int node_num=1;
     counter_args = head;
-    printf("printing queue:\n");
     while (counter_args!=NULL){
-        printf("node_num = %d: counter_args->counter_action = %d , counter_args->cmd_num = %d\n", node_num, counter_args->counter_action, counter_args->cmd_num);
+        // printf("node_num = %d: counter_args->counter_action = %d , counter_args->cmd_num = %d\n", node_num, counter_args->counter_action, counter_args->cmd_num);
         counter_args=counter_args->next;
         node_num++;
     }

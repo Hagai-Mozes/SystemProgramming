@@ -1,2 +1,2 @@
-TIME 2: START job worker msleep 11; increment 1;
-TIME 16: END job worker msleep 11; increment 1;
+TIME 6: START job worker repeat 3; increment 3; msleep 1000;
+TIME 3009: END job worker repeat 3; increment 3; msleep 1000;

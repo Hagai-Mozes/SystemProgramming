@@ -28,18 +28,18 @@ struct thread_data_s{
     int id;
 };
 
-typedef struct file_s{
-    FILE* fp;
-    char *name;
-} File_s;
-
 //Global variables
 long long int start_time;
 int log_enabled=0;
 int finish_flag;
 int num_running_threads=0;
 
-FILE* counters[MAX_NUM_COUNTERS];
+typedef struct file_s{
+    FILE* fp;
+    char name[30];
+} File_s;
+
+File_s counters[MAX_NUM_COUNTERS];
 struct thread_data_s thread_data[MAX_NUM_THREADS];
 
 void write_log_line(FILE* log_file, char *line, Log_mode mode){
@@ -54,15 +54,12 @@ void write_log_line(FILE* log_file, char *line, Log_mode mode){
         }
         if (mode==LOG_START){
             fprintf(log_file, "TIME %lld: START job %s", end_time - start_time, line);
-            printf("TIME %lld: START job %s", end_time - start_time, line);
         }
         else if(mode==LOG_END){
             fprintf(log_file, "TIME %lld: END job %s", end_time - start_time, line);
-            printf("TIME %lld: END job %s", end_time - start_time, line);
         }
         else{
             fprintf(log_file, "TIME %lld: read cmd line: %s", end_time - start_time, line);
-            printf("TIME %lld: read cmd line: %s", end_time - start_time, line);
         }
     }
 }
@@ -98,7 +95,6 @@ Counter_args_s *parse_worker_line(char* line){
             counter_args->counter_action = 1;
         }
         else if(!strcmp(worker_cmd_str,"decrement")){
-            printf("finish dispetcher_wait - now decrement\n");
             counter_args->counter_action = -1;
         }
         counter_args->cmd_num = atoi(strtok(NULL, " ;\n")); //FIXME - does every command ends with ;?
@@ -125,7 +121,6 @@ void *worker_thread(void* arg){
         sprintf(log_file_name, "thread%02d.txt", id);
         log_file=fopen(log_file_name, "w");
     }
-    printf("hi from %d\n", thread_data->id);
     while(1){
         pthread_mutex_lock(&threads_mutex);
         pthread_mutex_lock(&queue_lock);
@@ -138,7 +133,6 @@ void *worker_thread(void* arg){
         }
         pthread_mutex_unlock(&threads_mutex);
         if (get_queue_head()==NULL && (finish_flag == 1)){
-            printf("bye from %d\n", thread_data->id);
             pthread_mutex_unlock(&queue_lock);
             break;
         }
@@ -153,30 +147,28 @@ void *worker_thread(void* arg){
             }
             else{
                 pthread_mutex_lock(&counters_mutex[curr_counter_args->cmd_num]);
-                printf("curr_counter_args->cmd_num: %d in thead %d\n",curr_counter_args->cmd_num, id);
                 counter_val=0;
-                fseek(counters[curr_counter_args->cmd_num], 0, SEEK_SET);
-                fscanf(counters[curr_counter_args->cmd_num], "%lld", &counter_val);
+                counters[curr_counter_args->cmd_num].fp=fopen(counters[curr_counter_args->cmd_num].name, "r");
+                fscanf(counters[curr_counter_args->cmd_num].fp, "%lld", &counter_val);
+                fclose(counters[curr_counter_args->cmd_num].fp);
                 counter_val+=curr_counter_args->counter_action;
-                sprintf(value_str, "%lld", counter_val);
-                printf("^^^^^^^^^^^%s^^^^^^^^^^^^^^^", value_str);
-                // fopen(NULL, "w", counters[curr_counter_args->cmd_num])           
-                /* counters[curr_counter_args->cmd_num]=freopen(NULL,"w",counters[curr_counter_args->cmd_num]); */
-                fseek(counters[curr_counter_args->cmd_num], 0, SEEK_SET);
-                fprintf(counters[curr_counter_args->cmd_num], "%lld", counter_val);
-                fclose(counters[curr_counter_args->cmd_num]);
-                // fwrite(value_str, 1, strlen(value_str), counters[curr_counter_args->cmd_num]);
+                counters[curr_counter_args->cmd_num].fp=fopen(counters[curr_counter_args->cmd_num].name, "w");
+                fprintf(counters[curr_counter_args->cmd_num].fp, "%lld", counter_val);
+                fclose(counters[curr_counter_args->cmd_num].fp);
                 pthread_mutex_unlock(&counters_mutex[curr_counter_args->cmd_num]);
             }
             prev_counter_args=curr_counter_args;
             curr_counter_args=curr_counter_args->next;
             free(prev_counter_args);
+            
         }
         write_log_line(log_file, curr_job->line, LOG_END);
         free(curr_job->line);
         free(curr_job);
     }
-    fclose(log_file);
+    if (log_enabled==1){
+        fclose(log_file);
+    }
     num_running_threads-=1;
 }
 
@@ -209,9 +201,10 @@ int main (int argc, char **argv) {
     }
     // create all counters files
     for (i=0; i<num_counters; i++){
-        sprintf(counter_filename, "./count%02d.txt", i);
-        counters[i] = fopen(counter_filename, "w");        
-        fprintf(counters[i], "0");
+        sprintf(counters[i].name, "./count%02d.txt", i);
+        counters[i].fp = fopen(counters[i].name, "w"); 
+        fprintf(counters[i].fp, "0");
+        fclose(counters[i].fp);
     }
     // create all threads
     for (i=0; i<num_threads; i++){
@@ -253,12 +246,10 @@ int main (int argc, char **argv) {
         }
         line=(char*) malloc(MAX_LINE_SIZE * sizeof(char));
     }
-    printf("finished read file\n");
     finish_flag=1;
     pthread_cond_broadcast(&cond_threads);
     for(i=0; i<num_threads; i++){
         pthread_join(threads[i], NULL);
-        printf("pthread_join\n");
     }
     pthread_cond_destroy(&cond_threads);
     pthread_cond_destroy(&cond_dispatcher_wait);
@@ -267,9 +258,9 @@ int main (int argc, char **argv) {
     for (i=0; i<num_counters; i++){
         pthread_mutex_destroy(&counters_mutex[i]);
     }
-    for (i=0; i<num_counters; i++){
-        fclose(counters[i]);
-    }
+    // for (i=0; i<num_counters; i++){
+    //     fclose(counters[i]);
+    // }
     fclose(cmdfile);
     if (dispatcher_log!=NULL){
         fclose(dispatcher_log);
