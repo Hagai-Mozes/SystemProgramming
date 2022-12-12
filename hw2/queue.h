@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* structs */
 typedef struct counter_args_s{
     int cmd_num;
     int counter_action; //-1 = decrement, 0 = sleep, 1 = increment
@@ -16,6 +17,7 @@ typedef struct jobs{
     struct jobs *next;
 } Jobs;
 
+/* functions */
 void repeat_commands(Counter_args_s *head_copy_counter_args, Counter_args_s *tail_copy_counter, int repeat);
 void print_counter_args(Counter_args_s* head);
 Jobs* dequeue();

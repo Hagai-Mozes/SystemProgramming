@@ -11,6 +11,7 @@ Jobs* get_queue_tail(){
     return jobs_tail;
 }
 
+/* pop out the head return it */
 Jobs* dequeue(){
     Jobs* curr_jobs_head;
     curr_jobs_head=jobs_head;
@@ -21,6 +22,7 @@ Jobs* dequeue(){
     return curr_jobs_head;
 }
 
+/* insert new node to the tail of the jobs queue */
 Jobs* enqueue(Counter_args_s* job, char* line){
     Jobs* new_job;
     new_job = (Jobs*) malloc(sizeof(Jobs));
@@ -48,6 +50,7 @@ void free_linked_list(Counter_args_s* head){
     }
 }
 
+/* get a pointer to a node in linked list, and copy from the node to the tail 'repeat' times */
 void repeat_commands(Counter_args_s *head_copy_counter_args, Counter_args_s *tail_copy_counter, int repeat){
     int i;
     Counter_args_s *copy_counter_args, *counter_args;
@@ -65,12 +68,13 @@ void repeat_commands(Counter_args_s *head_copy_counter_args, Counter_args_s *tai
     }
 }
 
+// print linked list of tasks for a worker - for debugging
 void print_counter_args(Counter_args_s* head){
     Counter_args_s* counter_args;
     int node_num=1;
     counter_args = head;
     while (counter_args!=NULL){
-        // printf("node_num = %d: counter_args->counter_action = %d , counter_args->cmd_num = %d\n", node_num, counter_args->counter_action, counter_args->cmd_num);
+        printf("node_num = %d: counter_args->counter_action = %d , counter_args->cmd_num = %d\n", node_num, counter_args->counter_action, counter_args->cmd_num);
         counter_args=counter_args->next;
         node_num++;
     }
