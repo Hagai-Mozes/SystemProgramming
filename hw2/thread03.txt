@@ -1,2 +1,0 @@
-TIME 818: START job worker increment 4; increment 4; increment 4; increment 4;
-TIME 820: END job worker increment 4; increment 4; increment 4; increment 4;

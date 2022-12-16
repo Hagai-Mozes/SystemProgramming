@@ -1,2 +1,0 @@
-TIME 818: START job worker msleep 10000;
-TIME 10819: END job worker msleep 10000;
