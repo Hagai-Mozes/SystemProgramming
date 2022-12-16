@@ -1,9 +1,2793 @@
-worker msleep 11; increment 1;
-worker msleep 22; repeat 200; increment 3; msleep 2;
+worker increment 1;
+worker repeat 200; increment 3;
 worker repeat 100; increment 3;
-dispatcher_wait;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
 worker increment 4; increment 4; increment 4; increment 4;
-worker msleep 55; increment 5; increment 5; increment 5; increment 5; increment 5;
-worker msleep 1000;
-worker msleep 4000;
-worker msleep 10000;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18
+worker increment 1;
+worker repeat 200; increment 3;
+worker repeat 100; increment 3;
+worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+worker increment 4; increment 4; increment 4; increment 4;
+worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+worker decrement 17; decrement 17; increment 18
+worker decrement 17; decrement 16; increment 18
+worker decrement 15; decrement 15; increment 15
+worker decrement 14; decrement 14; increment 14
+worker decrement 13; decrement 13; increment 13
+worker decrement 12; decrement 12; increment 12
+worker decrement 11; decrement 11; increment 11
+worker decrement 10; decrement 10; increment 10
+worker decrement 8; decrement 8; increment 8
+worker decrement 9; decrement 6; increment 7
+worker decrement 7; decrement 7; incremt 7
+worker decrement 6; decrement 6; increment 6
+worker decrement 17; decrement 16; increment 18

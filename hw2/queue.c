@@ -50,24 +50,6 @@ void free_linked_list(Counter_args_s* head){
     }
 }
 
-/* get a pointer to a node in linked list, and copy from the node to the tail 'repeat' times */
-void repeat_commands(Counter_args_s *head_copy_counter_args, Counter_args_s *tail_copy_counter, int repeat){
-    int i;
-    Counter_args_s *copy_counter_args, *counter_args;
-    counter_args=tail_copy_counter;
-    for (i=0; i < repeat-1; i++){
-        copy_counter_args = head_copy_counter_args;
-        while (copy_counter_args != tail_copy_counter->next){
-            counter_args->next = (Counter_args_s*) malloc(sizeof(Counter_args_s));
-            counter_args=counter_args->next;
-            counter_args->counter_action = copy_counter_args->counter_action;
-            counter_args->cmd_num = copy_counter_args->cmd_num;
-            counter_args->next=NULL;
-            copy_counter_args = copy_counter_args->next;
-        }
-    }
-}
-
 // print linked list of tasks for a worker - for debugging
 void print_counter_args(Counter_args_s* head){
     Counter_args_s* counter_args;

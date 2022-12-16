@@ -90,15 +90,14 @@ long long int update_calc(){
 
 /* get a worker line string and return linked list of tasks for a worker */
 Counter_args_s *parse_worker_line(char* line){
-    int i=0, repeat=0, repeat_flag=0;
-    Counter_args_s *counter_args ,*head_counter_args, *head_copy_counter_args;
+    int i=0, repeat=1;
+    Counter_args_s *counter_args ,*head_counter_args;
     char *worker_cmd_str;
     head_counter_args=NULL;
     counter_args=NULL;
     while((worker_cmd_str = strtok(NULL, " ;\n")) != NULL){
         if(!strcmp(worker_cmd_str,"repeat")){
             repeat=atoi(strtok(NULL, " ;\n"));
-            repeat_flag=1;
             continue;
         }
         if(counter_args==NULL){
@@ -109,24 +108,19 @@ Counter_args_s *parse_worker_line(char* line){
             counter_args->next = (Counter_args_s*) malloc(sizeof(Counter_args_s));
             counter_args=counter_args->next;
         }
-        if(repeat_flag){
-            repeat_flag=0;
-            head_copy_counter_args=counter_args;
-        }
+        counter_args->cmd_num = atoi(strtok(NULL, " ;\n"));
         if(!strcmp(worker_cmd_str,"msleep")){
             counter_args->counter_action = ACTION_MSLEEP;
+            counter_args->cmd_num *= repeat;
         }
         else if(!strcmp(worker_cmd_str,"increment")){
-            counter_args->counter_action = 1;
+            counter_args->counter_action = 1*repeat;
         }
         else if(!strcmp(worker_cmd_str,"decrement")){
-            counter_args->counter_action = -1;
+            counter_args->counter_action = -1*repeat;
         }
-        counter_args->cmd_num = atoi(strtok(NULL, " ;\n")); //FIXME - does every command ends with ;?
         counter_args->next=NULL;
     }
-    repeat_commands(head_copy_counter_args, counter_args, repeat);
-    pthread_cond_signal(&cond_threads);
     return head_counter_args;
 }
 
@@ -277,9 +271,12 @@ int main (int argc, char **argv) {
         }
         else if (!strcmp(mode_str, "dispatcher_wait")){
             pthread_mutex_lock(&threads_mutex);
+            pthread_mutex_lock(&queue_lock);
             while ((num_running_threads!=0) || (get_queue_head()!=NULL)){
+                pthread_mutex_unlock(&queue_lock);
                 pthread_cond_wait(&cond_dispatcher_wait, &threads_mutex);
             }
+            pthread_mutex_unlock(&queue_lock);
             pthread_mutex_unlock(&threads_mutex);
             free(line);
         }
@@ -289,6 +286,7 @@ int main (int argc, char **argv) {
             pthread_mutex_lock(&queue_lock);
             enqueue(head_counter_args, line);
             pthread_mutex_unlock(&queue_lock);
+            pthread_cond_signal(&cond_threads);
         }
         else{
             fprintf(stderr, "Illegal command: %s\n", line);
@@ -310,7 +308,7 @@ int main (int argc, char **argv) {
         pthread_mutex_destroy(&counters_mutex[i]);
     }
     fclose(cmdfile);
-    if (dispatcher_log!=NULL){
+    if (log_enabled){
         fclose(dispatcher_log);
     }
     create_stats_file(worker_jobs_num);
