@@ -1,0 +1,26 @@
+TIME 5089: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 5566: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 5566: START job worker decrement 17; decrement 17; increment 18
+TIME 5964: END job worker decrement 17; decrement 17; increment 18
+TIME 5964: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5978: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5978: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5982: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5982: START job worker decrement 15; decrement 15; increment 15
+TIME 5997: END job worker decrement 15; decrement 15; increment 15
+TIME 5997: START job worker decrement 17; decrement 16; increment 18
+TIME 6003: END job worker decrement 17; decrement 16; increment 18
+TIME 6003: START job worker decrement 8; decrement 8; increment 8
+TIME 6528: END job worker decrement 8; decrement 8; increment 8
+TIME 6528: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6844: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6844: START job worker decrement 9; decrement 6; increment 7
+TIME 7300: END job worker decrement 9; decrement 6; increment 7
+TIME 7300: START job worker decrement 11; decrement 11; increment 11
+TIME 7309: END job worker decrement 11; decrement 11; increment 11
+TIME 7309: START job worker decrement 6; decrement 6; increment 6
+TIME 7509: END job worker decrement 6; decrement 6; increment 6
+TIME 7509: START job worker decrement 17; decrement 16; increment 18
+TIME 8362: END job worker decrement 17; decrement 16; increment 18
+TIME 8362: START job worker decrement 12; decrement 12; increment 12
+TIME 8779: END job worker decrement 12; decrement 12; increment 12

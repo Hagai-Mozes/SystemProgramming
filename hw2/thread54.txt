@@ -1,0 +1,32 @@
+TIME 5057: START job worker decrement 8; decrement 8; increment 8
+TIME 5145: END job worker decrement 8; decrement 8; increment 8
+TIME 5145: START job worker decrement 8; decrement 8; increment 8
+TIME 5441: END job worker decrement 8; decrement 8; increment 8
+TIME 5441: START job worker decrement 17; decrement 17; increment 18
+TIME 5724: END job worker decrement 17; decrement 17; increment 18
+TIME 5724: START job worker decrement 6; decrement 6; increment 6
+TIME 6002: END job worker decrement 6; decrement 6; increment 6
+TIME 6002: START job worker decrement 12; decrement 12; increment 12
+TIME 6272: END job worker decrement 12; decrement 12; increment 12
+TIME 6272: START job worker decrement 17; decrement 16; increment 18
+TIME 6785: END job worker decrement 17; decrement 16; increment 18
+TIME 6785: START job worker repeat 100; increment 3;
+TIME 6799: END job worker repeat 100; increment 3;
+TIME 6799: START job worker increment 1;
+TIME 6799: END job worker increment 1;
+TIME 6799: START job worker repeat 200; increment 3;
+TIME 6799: END job worker repeat 200; increment 3;
+TIME 6799: START job worker repeat 100; increment 3;
+TIME 6801: END job worker repeat 100; increment 3;
+TIME 6801: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7086: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7086: START job worker decrement 7; decrement 7; incremt 7
+TIME 7112: END job worker decrement 7; decrement 7; incremt 7
+TIME 7121: START job worker decrement 11; decrement 11; increment 11
+TIME 7369: END job worker decrement 11; decrement 11; increment 11
+TIME 7369: START job worker decrement 12; decrement 12; increment 12
+TIME 7434: END job worker decrement 12; decrement 12; increment 12
+TIME 7434: START job worker decrement 17; decrement 16; increment 18
+TIME 8358: END job worker decrement 17; decrement 16; increment 18
+TIME 8358: START job worker decrement 14; decrement 14; increment 14
+TIME 8648: END job worker decrement 14; decrement 14; increment 14

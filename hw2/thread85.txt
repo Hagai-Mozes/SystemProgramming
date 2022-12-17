@@ -1,0 +1,28 @@
+TIME 5057: START job worker decrement 9; decrement 6; increment 7
+TIME 5443: END job worker decrement 9; decrement 6; increment 7
+TIME 5443: START job worker decrement 12; decrement 12; increment 12
+TIME 5483: END job worker decrement 12; decrement 12; increment 12
+TIME 5483: START job worker decrement 15; decrement 15; increment 15
+TIME 5559: END job worker decrement 15; decrement 15; increment 15
+TIME 5559: START job worker increment 1;
+TIME 5560: END job worker increment 1;
+TIME 5560: START job worker repeat 200; increment 3;
+TIME 5650: END job worker repeat 200; increment 3;
+TIME 5650: START job worker decrement 17; decrement 16; increment 18
+TIME 6027: END job worker decrement 17; decrement 16; increment 18
+TIME 6027: START job worker decrement 12; decrement 12; increment 12
+TIME 6297: END job worker decrement 12; decrement 12; increment 12
+TIME 6297: START job worker decrement 6; decrement 6; increment 6
+TIME 6451: END job worker decrement 6; decrement 6; increment 6
+TIME 6451: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 6743: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 6743: START job worker decrement 8; decrement 8; increment 8
+TIME 6928: END job worker decrement 8; decrement 8; increment 8
+TIME 6932: START job worker decrement 12; decrement 12; increment 12
+TIME 6997: END job worker decrement 12; decrement 12; increment 12
+TIME 6997: START job worker decrement 17; decrement 16; increment 18
+TIME 7414: END job worker decrement 17; decrement 16; increment 18
+TIME 7414: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8286: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8286: START job worker decrement 17; decrement 16; increment 18
+TIME 8603: END job worker decrement 17; decrement 16; increment 18

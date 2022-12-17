@@ -1,0 +1,30 @@
+TIME 5073: START job worker decrement 17; decrement 16; increment 18
+TIME 5231: END job worker decrement 17; decrement 16; increment 18
+TIME 5231: START job worker decrement 17; decrement 16; increment 18
+TIME 5989: END job worker decrement 17; decrement 16; increment 18
+TIME 5989: START job worker decrement 9; decrement 6; increment 7
+TIME 6165: END job worker decrement 9; decrement 6; increment 7
+TIME 6165: START job worker decrement 11; decrement 11; increment 11
+TIME 6171: END job worker decrement 11; decrement 11; increment 11
+TIME 6171: START job worker decrement 17; decrement 16; increment 18
+TIME 6756: END job worker decrement 17; decrement 16; increment 18
+TIME 6756: START job worker decrement 14; decrement 14; increment 14
+TIME 6766: END job worker decrement 14; decrement 14; increment 14
+TIME 6766: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7100: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7100: START job worker decrement 12; decrement 12; increment 12
+TIME 7217: END job worker decrement 12; decrement 12; increment 12
+TIME 7217: START job worker decrement 14; decrement 14; increment 14
+TIME 7223: END job worker decrement 14; decrement 14; increment 14
+TIME 7223: START job worker decrement 11; decrement 11; increment 11
+TIME 7341: END job worker decrement 11; decrement 11; increment 11
+TIME 7341: START job worker increment 1;
+TIME 7342: END job worker increment 1;
+TIME 7342: START job worker repeat 200; increment 3;
+TIME 7566: END job worker repeat 200; increment 3;
+TIME 7566: START job worker decrement 17; decrement 16; increment 18
+TIME 8392: END job worker decrement 17; decrement 16; increment 18
+TIME 8392: START job worker repeat 200; increment 3;
+TIME 8393: END job worker repeat 200; increment 3;
+TIME 8393: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 8725: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;

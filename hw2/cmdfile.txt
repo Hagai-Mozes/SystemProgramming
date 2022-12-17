@@ -5,9 +5,10 @@ worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0
 worker increment 4; increment 4; increment 4; increment 4;
 worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
 worker decrement 17; decrement 17; increment 18
-worker decrement 17; decrement 16; increment 18
+worker decrement 17; decrement 16; increment 18; repeat 1000; msleep 5
 worker decrement 15; decrement 15; increment 15
 worker decrement 14; decrement 14; increment 14
+dispatcher_wait
 worker decrement 13; decrement 13; increment 13
 worker decrement 12; decrement 12; increment 12
 worker decrement 11; decrement 11; increment 11

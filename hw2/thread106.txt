@@ -1,0 +1,30 @@
+TIME 5089: START job worker decrement 11; decrement 11; increment 11
+TIME 5157: END job worker decrement 11; decrement 11; increment 11
+TIME 5157: START job worker increment 1;
+TIME 5230: END job worker increment 1;
+TIME 5230: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 5332: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 5332: START job worker decrement 11; decrement 11; increment 11
+TIME 5640: END job worker decrement 11; decrement 11; increment 11
+TIME 5640: START job worker decrement 11; decrement 11; increment 11
+TIME 5642: END job worker decrement 11; decrement 11; increment 11
+TIME 5642: START job worker decrement 8; decrement 8; increment 8
+TIME 5656: END job worker decrement 8; decrement 8; increment 8
+TIME 5656: START job worker decrement 12; decrement 12; increment 12
+TIME 5660: END job worker decrement 12; decrement 12; increment 12
+TIME 5660: START job worker decrement 6; decrement 6; increment 6
+TIME 6177: END job worker decrement 6; decrement 6; increment 6
+TIME 6177: START job worker repeat 200; increment 3;
+TIME 6177: END job worker repeat 200; increment 3;
+TIME 6177: START job worker repeat 100; increment 3;
+TIME 6179: END job worker repeat 100; increment 3;
+TIME 6179: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6301: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6301: START job worker increment 1;
+TIME 6310: END job worker increment 1;
+TIME 6310: START job worker decrement 12; decrement 12; increment 12
+TIME 6583: END job worker decrement 12; decrement 12; increment 12
+TIME 6583: START job worker decrement 17; decrement 16; increment 18
+TIME 7387: END job worker decrement 17; decrement 16; increment 18
+TIME 7387: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8492: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19

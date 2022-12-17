@@ -1,0 +1,24 @@
+TIME 5107: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5233: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5233: START job worker decrement 14; decrement 14; increment 14
+TIME 5350: END job worker decrement 14; decrement 14; increment 14
+TIME 5350: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5537: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5537: START job worker decrement 14; decrement 14; increment 14
+TIME 5542: END job worker decrement 14; decrement 14; increment 14
+TIME 5544: START job worker decrement 6; decrement 6; increment 6
+TIME 5792: END job worker decrement 6; decrement 6; increment 6
+TIME 5792: START job worker decrement 11; decrement 11; increment 11
+TIME 6473: END job worker decrement 11; decrement 11; increment 11
+TIME 6473: START job worker repeat 100; increment 3;
+TIME 6493: END job worker repeat 100; increment 3;
+TIME 6493: START job worker increment 1;
+TIME 6509: END job worker increment 1;
+TIME 6509: START job worker decrement 9; decrement 6; increment 7
+TIME 7368: END job worker decrement 9; decrement 6; increment 7
+TIME 7368: START job worker decrement 14; decrement 14; increment 14
+TIME 8052: END job worker decrement 14; decrement 14; increment 14
+TIME 8052: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 8057: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 8057: START job worker decrement 17; decrement 16; increment 18
+TIME 8606: END job worker decrement 17; decrement 16; increment 18

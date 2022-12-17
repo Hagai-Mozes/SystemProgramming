@@ -236,6 +236,13 @@ int main (int argc, char **argv) {
     num_threads=atoi(argv[2]);
     num_counters=atoi(argv[3]);
     log_enabled=atoi(argv[4]);
+    pthread_mutex_init(&threads_mutex, NULL);
+    pthread_mutex_init(&queue_lock, NULL);
+    pthread_cond_init(&cond_threads, NULL);
+    pthread_cond_init(&cond_dispatcher_wait, NULL);
+    min_jobs_time=LLONG_MAX;
+    sum_jobs_time=0;
+
     pthread_t threads[num_threads];
     //create dispatcher log file if needed
     if(log_enabled){
@@ -312,4 +319,5 @@ int main (int argc, char **argv) {
         fclose(dispatcher_log);
     }
     create_stats_file(worker_jobs_num);
+    return 0;
 }

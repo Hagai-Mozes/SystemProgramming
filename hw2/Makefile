@@ -1,5 +1,5 @@
 all: hw2.o
-	gcc -o hw2 hw2.c queue.o -lpthread -lm
+	gcc -o hw2 hw2.c queue.o
 hw2.o: queue.o
 queue.o: queue.h
 clean:

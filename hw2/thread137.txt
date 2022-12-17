@@ -1,0 +1,32 @@
+TIME 5073: START job worker decrement 10; decrement 10; increment 10
+TIME 5325: END job worker decrement 10; decrement 10; increment 10
+TIME 5325: START job worker decrement 17; decrement 17; increment 18
+TIME 5683: END job worker decrement 17; decrement 17; increment 18
+TIME 5683: START job worker decrement 15; decrement 15; increment 15
+TIME 5686: END job worker decrement 15; decrement 15; increment 15
+TIME 5686: START job worker decrement 12; decrement 12; increment 12
+TIME 5761: END job worker decrement 12; decrement 12; increment 12
+TIME 5805: START job worker decrement 11; decrement 11; increment 11
+TIME 6164: END job worker decrement 11; decrement 11; increment 11
+TIME 6164: START job worker decrement 13; decrement 13; increment 13
+TIME 6283: END job worker decrement 13; decrement 13; increment 13
+TIME 6283: START job worker decrement 13; decrement 13; increment 13
+TIME 6586: END job worker decrement 13; decrement 13; increment 13
+TIME 6586: START job worker decrement 12; decrement 12; increment 12
+TIME 6893: END job worker decrement 12; decrement 12; increment 12
+TIME 6893: START job worker decrement 14; decrement 14; increment 14
+TIME 6898: END job worker decrement 14; decrement 14; increment 14
+TIME 6898: START job worker decrement 10; decrement 10; increment 10
+TIME 7696: END job worker decrement 10; decrement 10; increment 10
+TIME 7696: START job worker decrement 7; decrement 7; incremt 7
+TIME 7745: END job worker decrement 7; decrement 7; incremt 7
+TIME 7745: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 7771: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 7771: START job worker decrement 6; decrement 6; increment 6
+TIME 8056: END job worker decrement 6; decrement 6; increment 6
+TIME 8056: START job worker decrement 17; decrement 17; increment 18
+TIME 8379: END job worker decrement 17; decrement 17; increment 18
+TIME 8379: START job worker decrement 12; decrement 12; increment 12
+TIME 8386: END job worker decrement 12; decrement 12; increment 12
+TIME 8386: START job worker decrement 6; decrement 6; increment 6
+TIME 8597: END job worker decrement 6; decrement 6; increment 6

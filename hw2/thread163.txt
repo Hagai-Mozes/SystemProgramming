@@ -1,0 +1,26 @@
+TIME 5057: START job worker increment 1;
+TIME 5064: END job worker increment 1;
+TIME 5064: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 5267: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 5267: START job worker decrement 17; decrement 17; increment 18
+TIME 5678: END job worker decrement 17; decrement 17; increment 18
+TIME 5678: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5754: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5786: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5832: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 5832: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 6884: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 6884: START job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7087: END job worker increment 5; increment 5; increment 5;repeat 30; increment 2; increment 0;
+TIME 7087: START job worker decrement 6; decrement 6; increment 6
+TIME 7243: END job worker decrement 6; decrement 6; increment 6
+TIME 7243: START job worker increment 1;
+TIME 7245: END job worker increment 1;
+TIME 7245: START job worker repeat 200; increment 3;
+TIME 7246: END job worker repeat 200; increment 3;
+TIME 7246: START job worker repeat 100; increment 3;
+TIME 7252: END job worker repeat 100; increment 3;
+TIME 7252: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8283: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8283: START job worker decrement 6; decrement 6; increment 6
+TIME 8545: END job worker decrement 6; decrement 6; increment 6

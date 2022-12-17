@@ -1,0 +1,30 @@
+TIME 5053: START job worker decrement 8; decrement 8; increment 8
+TIME 5066: END job worker decrement 8; decrement 8; increment 8
+TIME 5066: START job worker decrement 17; decrement 17; increment 18
+TIME 5206: END job worker decrement 17; decrement 17; increment 18
+TIME 5206: START job worker decrement 17; decrement 16; increment 18
+TIME 5722: END job worker decrement 17; decrement 16; increment 18
+TIME 5722: START job worker decrement 11; decrement 11; increment 11
+TIME 6336: END job worker decrement 11; decrement 11; increment 11
+TIME 6336: START job worker decrement 9; decrement 6; increment 7
+TIME 6627: END job worker decrement 9; decrement 6; increment 7
+TIME 6627: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6808: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6808: START job worker decrement 11; decrement 11; increment 11
+TIME 6919: END job worker decrement 11; decrement 11; increment 11
+TIME 6919: START job worker decrement 7; decrement 7; incremt 7
+TIME 6931: END job worker decrement 7; decrement 7; incremt 7
+TIME 6931: START job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6963: END job worker increment 4; increment 4; increment 4; increment 4;
+TIME 6963: START job worker decrement 14; decrement 14; increment 14
+TIME 7028: END job worker decrement 14; decrement 14; increment 14
+TIME 7028: START job worker decrement 15; decrement 15; increment 15
+TIME 7050: END job worker decrement 15; decrement 15; increment 15
+TIME 7050: START job worker increment 1;
+TIME 7050: END job worker increment 1;
+TIME 7050: START job worker repeat 200; increment 3;
+TIME 7051: END job worker repeat 200; increment 3;
+TIME 7051: START job worker repeat 100; increment 3;
+TIME 7057: END job worker repeat 100; increment 3;
+TIME 7057: START job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
+TIME 8774: END job worker decrement 19; decrement 19; increment 19; increment 18; repeat 10; decrement 19; decrement 19
