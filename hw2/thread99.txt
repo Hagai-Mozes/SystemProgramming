@@ -1,6 +1,0 @@
-TIME 5073: START job worker decrement 17; decrement 16; increment 18
-TIME 5987: END job worker decrement 17; decrement 16; increment 18
-TIME 5987: START job worker decrement 10; decrement 10; increment 10
-TIME 8221: END job worker decrement 10; decrement 10; increment 10
-TIME 8221: START job worker decrement 17; decrement 16; increment 18
-TIME 8618: END job worker decrement 17; decrement 16; increment 18
