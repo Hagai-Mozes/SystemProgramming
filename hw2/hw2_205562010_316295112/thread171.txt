@@ -1,0 +1,30 @@
+TIME 78: START job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 173: END job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 173: START job worker increment 0; decrement 0
+TIME 174: END job worker increment 0; decrement 0
+TIME 174: START job worker increment 1; decrement 1; repeat 1 ;increment 1
+TIME 903: END job worker increment 1; decrement 1; repeat 1 ;increment 1
+TIME 903: START job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 1686: END job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 1686: START job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 2624: END job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 2624: START job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 2627: END job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 2627: START job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 2722: END job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 2722: START job worker increment 1; decrement 1; repeat 1 ;increment 1
+TIME 2758: END job worker increment 1; decrement 1; repeat 1 ;increment 1
+TIME 2758: START job worker increment 14; decrement 14; repeat 14 ;increment 14; decrement 15
+TIME 11974: END job worker increment 14; decrement 14; repeat 14 ;increment 14; decrement 15
+TIME 11974: START job worker increment 0; decrement 0
+TIME 11998: END job worker increment 0; decrement 0
+TIME 11998: START job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 12035: END job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 12035: START job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 12504: END job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 14190: START job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 14243: END job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 14243: START job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 14401: END job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 14584: START job worker increment 17; decrement 17; repeat 17 ;increment 17; decrement 18
+TIME 19829: END job worker increment 17; decrement 17; repeat 17 ;increment 17; decrement 18

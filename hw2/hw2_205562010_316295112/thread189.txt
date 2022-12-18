@@ -1,0 +1,12 @@
+TIME 79: START job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 326: END job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 326: START job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 2350: END job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 2350: START job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 2713: END job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 2713: START job worker increment 17; decrement 17; repeat 17 ;increment 17; decrement 18
+TIME 13410: END job worker increment 17; decrement 17; repeat 17 ;increment 17; decrement 18
+TIME 14224: START job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 16127: END job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 16127: START job worker increment 13; decrement 13; repeat 13 ;increment 13; decrement 14
+TIME 19123: END job worker increment 13; decrement 13; repeat 13 ;increment 13; decrement 14

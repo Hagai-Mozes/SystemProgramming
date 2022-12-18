@@ -1,0 +1,26 @@
+TIME 44: START job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 311: END job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 311: START job worker increment 18; decrement 18; repeat 2 ;decrement 19;
+TIME 2105: END job worker increment 18; decrement 18; repeat 2 ;decrement 19;
+TIME 2105: START job worker increment 18; decrement 18; repeat 18 ;increment 18; decrement 19
+TIME 9102: END job worker increment 18; decrement 18; repeat 18 ;increment 18; decrement 19
+TIME 9102: START job worker increment 5; decrement 5; repeat 5 ;increment 5
+TIME 9111: END job worker increment 5; decrement 5; repeat 5 ;increment 5
+TIME 9121: START job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 9362: END job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 9362: START job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 9364: END job worker increment 2; decrement 2; repeat 2 ;increment 2
+TIME 9364: START job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 9367: END job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 9367: START job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 9371: END job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 9371: START job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 9761: END job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 9761: START job worker increment 15; decrement 15; repeat 15 ;increment 15; decrement 16
+TIME 13763: END job worker increment 15; decrement 15; repeat 15 ;increment 15; decrement 16
+TIME 14224: START job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 14349: END job worker increment 6; decrement 6; repeat 6 ;increment 6
+TIME 14542: START job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 15706: END job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 15706: START job worker increment 12; decrement 12; repeat 12 ;increment 12; decrement 13
+TIME 18847: END job worker increment 12; decrement 12; repeat 12 ;increment 12; decrement 13

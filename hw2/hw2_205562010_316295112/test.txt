@@ -1,0 +1,1 @@
+./hw2 cmdfile.txt 350 21 0

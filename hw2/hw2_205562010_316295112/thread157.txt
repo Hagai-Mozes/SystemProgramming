@@ -1,0 +1,26 @@
+TIME 78: START job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 1296: END job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 1296: START job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 2036: END job worker increment 7; decrement 7; repeat 7 ;increment 7
+TIME 2036: START job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 2364: END job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 2364: START job worker increment 12; decrement 12; repeat 12 ;increment 12; decrement 13
+TIME 8167: END job worker increment 12; decrement 12; repeat 12 ;increment 12; decrement 13
+TIME 8167: START job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 8261: END job worker increment 4; decrement 4; repeat 4 ;increment 4
+TIME 8261: START job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
+TIME 10351: END job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
+TIME 10351: START job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 10358: END job worker increment 3; decrement 3; repeat 3 ;increment 3
+TIME 10358: START job worker increment 5; decrement 5; repeat 5 ;increment 5
+TIME 10368: END job worker increment 5; decrement 5; repeat 5 ;increment 5
+TIME 10368: START job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 10385: END job worker increment 8; decrement 8; repeat 8 ;increment 8
+TIME 10385: START job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
+TIME 10479: END job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
+TIME 10479: START job worker increment 13; decrement 13; repeat 13 ;increment 13; decrement 14
+TIME 13315: END job worker increment 13; decrement 13; repeat 13 ;increment 13; decrement 14
+TIME 14223: START job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 14569: END job worker increment 10; decrement 10; repeat 10 ;increment 10
+TIME 14569: START job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
+TIME 18046: END job worker increment 11; decrement 11; repeat 11 ;increment 11; decrement 12
